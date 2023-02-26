@@ -1,1200 +1,616 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="Keywords" content="Prayush,Prayush Adhikari, prayushadhikari,prayushadhikari.com.np,prayush adhikari website,graphics designer,web developer, Prayush">
-  <meta name="Description" content="This page contains perosnal portfolio of a designer and developer Prayush Adhikari">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prayush-Personal Portfolio</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prayush Adhikari - Personal Portfolio" />
+	<meta name="keywords" content="prayush adhikari, prayush, designer in dharan, developer in dharan, blogger in dharan, prayushadhikari,adhikariprayush" />
+	<meta name="author" content="Prayush Adhikari" />
+    <title>Prayush Adhikari - Personal Portfolio</title>
+  <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="images/favicon.png">
+   <!--favicon-img-->
+   <!--main css file should not be removed -->
+    <link rel="stylesheet" href="css/index.css">
+    <!--main css file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
-
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Prayush Adhikari" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Prayush Adhikari">Prayush Adhikari</h1>
-
-          <p class="title">Designer and Developer</p>
+    <!--contains all the div-->
+    <div id="all">
+    <!--mouse  follower-->
+        <div class="cursor"></div>
+    <!--mouse  follower-->
+    <!--loader-->
+        <div id="loader">
+            <span class="color">Prayush</span>Adhikari 
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:info@prayushadhikari.com.np" class="contact-link">adhikareeprayush@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+977-9824558987" class="contact-link">+977-9824558987</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2003-05-02">May 02, 2003</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Bishalchowk, Dharan, Nepal</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/APrayush" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/prayush-adhikari-967386218/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/prayush_adh/" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I'm a designer and developer from Dharan, Nepal, working in digital marketing media.
-            I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
-          </p>
-
-          <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive and ultimately enhance your business.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I dont have any professional work experience yet.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-seo.png" alt="seo icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Search Engine Optimization</h4>
-
-                <p class="service-item-text">
-                  Rank your website top on search engines.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Prayush was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Prayush was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Prayush was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Prayush was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
+    <!--loader-end-->
+    <!--link-screen-->
+        <div id="breaker">
         </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        <div id="breaker-two">
+        </div>
+    <!--link-screen-->
+        <!--Main-Section-->
+        <!--Navigator-fullscreen-->
+        <div id="navigation-content">
+            <div class="logo">
+                <img src="images/prayush-logo.png" alt="logo">
             </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Shree Bhanu Memorial English School</h4>
-
-              <span>2007 — 2018</span>
-
-              <p class="timeline-text">
-                Completed 10th grade with Computer and maths as optional subjects<br>
-                GPA:4.0..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sushma Secondary School</h4>
-
-              <span>2020 — 2022</span>
-
-              <p class="timeline-text">
-               Completed 10+2 in Science with computer as optional subject
-               <br>GPA:3.81..
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">IOE Purwanchal Campus</h4>
-
-              <span>2023 — Present</span>
-
-              <p class="timeline-text">
-                Currently, persuing  Bachelors in Computer Engineering..
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
             </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Designer & Developer</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                I have been working as a web designer to create nice and beautiful website designs for local businesses and on freelancing websites.
-                I also develop mobile applications and use figma to create UI/UX designs.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Graphics Designer</h4>
-
-              <span>2020 — Present</span>
-
-              <p class="timeline-text">
-                I have been working as a graphics designer for freelancing platforms and local businesses. I have depth knowledge in adobe softwares like 
-                Illustrator, Photoshop and Premier pro.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">App Developer</h4>
-
-              <span>2022 — Present</span>
-
-              <p class="timeline-text">
-                I have been using flutter for app development for ios and android platforms for local restaurants and businesses.
-                
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Fundo</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project1.png" alt="gurkhraprofitness" loading="lazy">
-                </figure>
-
-                <h3 class="project-title"><a href="https://gurkhaprofitness.com">GurkhaPro-Fitness</a></h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1586.418833413048!2d87.29455937470686!3d26.7957129446939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sbishal%20chowk%20dharan!5e0!3m2!1sen!2snp!4v1672931824548!5m2!1sen!2snp"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="https://formsubmit.co/info@prayushadhikari.com.np" method="POST" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="hidden" name="_next" value="https://www.prayushadhikari.com.np">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            <div class="navigation-links">
+                <a href="#" data-text="HOME" id="home-link" >HOME</a>
+                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
+                <a href="#" data-text="BLOG" id="blog-link" >BLOG</a>
+                <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
+                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
             </div>
+        </div>
+        <!--Navigator-Fullscreen END-->
+          <!--Home Page-->
+        <!--Menubar-->
+        <div id="navigation-bar">
+            <img src="images/prayush-logo.png" alt="logo">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!--Menubar End-->
+          <!--Header-->
+        <div id="header">
+            <div id="particles"></div>
+              <!--Social Media Links-->
+              <div class="social-media-links">
+              <a href="https://www.instagram.com/prayush_adh/"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+               <a href="https://www.facebook.com/APrayush"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
+               <a href="https://www.linkedin.com/in/prayush-adhikari-967386218/"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+               <a href="https://twitter.com/Aprayush"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+           </div>
+            <!--Social Media Links end-->
+            <div class="header-content">
+                <div class="header-content-box">
+                <div class="firstline"><span class="color">Prayush </span>Adhikari</div>
+                <div class="secondline">
+                I'm a
+            <span class="txt-rotate color" data-period="1200"data-rotate='[ " Designer.", " Blogger.", " Freelancer." ]'></span>
+            <span class="slash">|</span>
+        </div>
+                    <div class="contact">
+                <a href="Mailto:adhikareeprayush@gmail.com"><img src="images/mail.png" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
+                <a href="Tel:+977 9824558987"><img src="images/call.png" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
+                    </div>    
+            </div>
+            </div>
+            <!--header image-->
+            <div class="header-image">
+            <img src="images/man.png" alt="logo">
+            </div>
+            <!--header image end-->
+        </div>
+           <!--Header End-->
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+        <div id="about">
+            <div class="color-changer">
+            <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!--about content-->
+            <div id="about-content">
+                <div class="about-header">
+                    About <span class="color">Me</span>
+                    <span class ="header-caption">Get to Know <span class="color"> me.</span></span>
+                </div>
+                <div class="about-main">
+            <div class="about-first-paragraph wow">
+            <!--about description-->
+               <span class="about-first-line">
+                    I'm creative 
+                    <span class="color">web developer</span>
+                     based in Dharan, Nepal </span>
+                     <br>
+               <span class="about-second-line"> With 2+ years of experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step while working.</span>
+               <div class="cv">
+                <a href="#"><button>Download <span class="colors">CV</span></button></a>
+            </div>
+            </div>
+            <!--about picture-->
+            <div class="about-img">
+                <img src="images/about.jpg" alt="Your Image">
+            </div>
+            </div>
+    
+            </div>
+            <!--services start-->
+            <div id="services">
+                <div class="color-changer">
+                    <div class="color-panel">
+                        <img src="images/gear.png" alt="">
+                    </div>
+                    <div class="color-selector">
+                        <div class="heading">Custom Colors</div>
+                        <div class="colors">
+                            <ul >
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    </div>
+            <!--services header-->
+                    <div class="services-heading wow">
+                        <span class="color">My</span> Services
+                    </div>
+            <!--services header end-->
+            <!--services content-->
+                    <div class="services-content">
+                           <div class="service-one service wow">
+                               <div class="service-img">
+                               <img src="images/coding.png" alt="service-one">
+                               </div>
+                               <div class="service-description">
+                                <h2>Web Designing</h2>
+                                <p>Elevate your online presence and attract more customers with my expert web development services, tailored to your unique business needs and designed to deliver exceptional user experiences.</p>
+                               </div>
+                           </div>
+                           <div class="service-two service wow">
+                               <div class="service-img">
+                               <img src="images/instagram.png" alt="service-two">
+                               </div>
+                               <div class="service-description">
+                                <h2>Social Media</h2>
+                                <p>Transform your social media presence and elevate your brand with my comprehensive social media services, including captivating post designs, engaging copywriting, and expert management.</p>
+                               </div>
+                           </div>
+                           <div class="service-three service wow">
+                            <div class="service-img">
+                               <img src="images/bulb.png" alt="service-three">
+                            </div>
+                            <div class="service-description">
+                                <h2>Creative Design</h2>
+                                <p>Unleash your brand's full potential with my creative design services, from eye-catching logos and stunning graphics to sleek web designs and engaging social media visuals, all crafted to help your business stand out.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <!--services content end-->
+            <!--services end-->
+            <div id="skills">
+                <div class="skills-header">
+                     My <span class="color"> Skills</span>
+                </div>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        HTML/CSS
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="html-progress wow">95%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                      Javascript
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="js-progress wow">90%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        Adobe Ps
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="adobe-progress wow">83%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        PHP
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="php-progress wow">87%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        JQuery
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="jquery-progress wow">94%</div>
+                    </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                    <div class="html">
+                        SEO
+                    </div>
+                        </div>
+                    <div class="html-prog wow prog">
+                 <div class="seo-progress wow">84%</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+    <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+             <div class="footer-text">
+                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Prayush Adhikari
+             </div>
+            </div>
+    <!--copyright-section-->
+        </div>
+        <!--about end-->
+        <!--portfolio-->
+        <div id="portfolio">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul >
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
+            <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
+             <div id="portfolio-content">
+                 <div class="portfolio portfolio-first">
+                     <div class="portfolio-image">
+                        <img src="images/portfolio-first.jpg" alt="portfolio-first">
+                     </div>
+                     <div class="portfolio-text">
+                         <h2>App Idea</h2>
+                         <p>FIT TRACKR<BR>FitTrackr is a fitness tracking app that allows users to set and track fitness goals, monitor progress, and connect with friends for support and motivation.</p>
+                         <div class="button"><a href="https://prayushwrites.blogspot.com/2022/02/fit-trackr-app-idea.html"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                     </div>
+                 </div>
+                 <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-second.jpg" alt="portfolio-second">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Web Development</h2>
+                        <p>GURKHA PRO-FITNESS TRAINIGN CENTER PVT. LTD.<BR>I have successfully developed and hosted a website for one of the best training center for British army and Singapore Police Force in Dharan, Nepal. It was a great fun completing the project!</p>
+                        <div class="button"><a href="https://gurkhaprofitness.com"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+             
+                <div class="portfolio portfolio-third">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-third.jpg" alt="portfolio-third">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>UI Designing</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate expedita eius dignissimos
+                            .. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <div class="button"><a href="#"><button><span class="index"> Coming Soon<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-fourth">
+                    <div class=" portfolio-image">
+                        <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Wow Graphics</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
+                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <div class="button"><a href="#"><button><span class="index"> Coming Soon<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>
+                 </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Prayush Adhikari
+                </div>
+               </div>
+       <!--copyright-section-->
+             </div>
+        <!--portfolio end-->
+        <!--blog-->
+        <div id="blog">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul >
+                        <li>
+                            <a href="#0" class="color-red " title="color-red"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-purple" title="color-purple"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-malt" title="color-malt"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-green" title="color-green"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-blue" title="color-blue"></a>
+                        </li>
+                        <li>
+                            <a href="#0" class="color-orange" title="color-orange"></a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+        <div class="blog-header"> Blogs</span>
+            <span class ="header-caption"> My Latest <span class="color"> blog posts.</span></span></div>
+            <div class="blog-content">
+                 <div class="blogs">
+                     <a href="https://prayushwrites.blogspot.com/2023/02/start-as-freelancer.html">
+                     <div class="img">
+                        <img src="images/post-one.png" alt="blog-one">
+                        <div class="blog-date">8 May,22</div>
+                     </div>
+                     <div class="blog-text">
+                         <h3>Start as a Freelancer</h3>
+                         <p>As the job market continues to evolve, more people are turning to freelancing as a way to take control of their careers and find greater flexibility and autonomy. If you're thinking of starting out as a freelancer, there are a few key things you should keep in mind to ensure your success. </p>
+                     </div></a>
+                 </div>      
+                 <div class="blogs">
+                    <a href="https://prayushwrites.blogspot.com/2023/02/key-to-be-productive.html">
+                    <div class="img">
+                        <img src="images/post-two.jpg" alt="blog-two">
+                        <div class="blog-date">4 Jan,23</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Key To Be Productive</h3>
+                        <p>Productivity is a key factor that can help us achieve our goals and live a fulfilling life. Being productive means making the most of our time, and being able to accomplish our tasks efficiently and effectively..</p>
+                    </div></a>
+                </div>      
+                <div class="blogs">
+                    <a href="https://prayushwrites.blogspot.com/2023/02/caffeine-addict.html">
+                    <div class="img">
+                        <img src="images/post-three.jpg" alt="blog-three">
+                        <div class="blog-date">30 Nov,22</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Caffeine Addict</h3>
+                        <p>Caffeine addiction is a growing problem that affects millions of people around the world. Caffeine is a stimulant that is found in coffee, tea, energy drinks, and some soft drinks. While moderate consumption of caffeine is generally considered safe, excessive consumption can lead to addiction and a range of health problems</p>
+                    </div></a>
+                </div>
+                <div class="blogs">
+                    <a href="https://prayushwrites.blogspot.com/2023/01/web-development.html">
+                    <div class="img">
+                        <img src="images/post-four.jpg" alt="blog-four">
+                        <div class="blog-date">6 Jul,22</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Web Development</h3>
+                        <p>Web development is the process of creating and maintaining websites. It encompasses a wide range of activities, including web design, web content development, client-side scripting, server-side scripting, and network security configuration. </p>
+                    </div></a>
+                </div>  
+                <div class="blogs">
+                    <a href="https://prayushwrites.blogspot.com/2022/06/work-from-home.html">
+                    <div class="img">
+                        <img src="images/post-five.jpg" alt="blog-five">
+                        <div class="blog-date">1 Jun,22</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Work From Home</h3>
+                        <p>Work from home (WFH) is a growing trend that has gained momentum in recent years. The COVID-19 pandemic has accelerated this trend, with many companies now embracing remote work as a viable option for their employees..</p>
+                    </div></a>
+                </div>  
+                <div class="blogs">
+                    <a href="https://prayushwrites.blogspot.com/2023/02/a-healthy-diet-for-students.html">
+                    <div class="img">
+                        <img src="images/post-six.png" alt="blog-six">
+                        <div class="blog-date">26 Feb,22</div>
+                    </div>
+                    <div class="blog-text">
+                        <h3>Healthy Diet for Students</h3>
+                        <p>As a student, maintaining a healthy diet is crucial for your overall health and well-being. A balanced diet not only helps you perform better academically but also helps you maintain a healthy weight and prevent chronic diseases..</p>
+                    </div></a>
+                </div>        
+            </div>
+               <!--copyright-section You Can Remove After Downloading-->
+               <div class="footer">
+                <div class="footer-text">
+                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Prayush Adhikari
+                </div>
+               </div>
+       <!--copyright-section-->
+        </div>
+        <!--blog end-->
+        <!--contact-->
+     <div id="contact">
+        <div class="color-changer">
+            <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Custom Colors</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+         <div class="contact-header">Contact <span class="color"> Me</span>
+        <div class="contact-header-caption"> <span class="color"> Get</span> In Touch.</div></div>
+        <div class="contact-content">
+            <!--Contact form-->
+             <div class="contact-form">
+                 <div class="form-header">
+                     Message Me
+                 </div>
+                 <form id="myForm" action="#">
+                    <div class="input-line">
+                        <input  id="name" type="text" placeholder="Name" class="input-name">
+                        <input id="email" type="email" placeholder="Email"  class="input-name">
+                    </div>
+                    <input type="text" id="subject" placeholder="subject" class="input-subject">
+                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
+                    <button type="button" id ="submit" value="send">Submit</button>
+                 </form>
+               
+             </div>
+            <!--Contact form-->
+            <!--Contact information-->
+             <div class="contact-info">
+                <div class="contact-info-header">
+                    Contact Info
+                </div>
+                <div class="contact-info-content">
+                <div class="contect-info-content-line">
+                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
+                    <div class="contact-info-icon-text">
+                        <h6>Name</h6>
+                        <p>Prayush Adhikari</p>
+                  </div>
+                </div>
+                <div class="contect-info-content-line">
+                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Location</h6>
+                      <p>Dharan, Nepal</p>
+                </div>
+              </div>
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Call</h6>
+                      <p>+9779824558987</p>
+                </div>
+              </div>
+              
+              <div class="contect-info-content-line">
+                  <img src="./images/icon-email.png" class="icon" alt="email-icon">
+                  <div class="contact-info-icon-text">
+                      <h6>Email</h6>
+                      <p>adhikareeprayush@gmail.com</p>
+                </div>
+              </div>
+                </div>
+            <!--Contact information end-->
+           </div>
+        </div>
+                    <!--copyright-section You Can Remove After Downloading-->
+                    <div class="footer">
+                        <div class="footer-text">
+                            <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Prayush Adhikari
+                        </div>
+                       </div>
+               <!--copyright-section-->
+     </div>
+        <!--contact end-->
     </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--particles script-->
+    <script>
+  particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+    </script>
 
 </body>
-
 </html>
